@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/logoAI.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./RSC/images/icon/code-solid.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/2b9718ccbe.js" crossorigin="anonymous"></script>
+    <title>Adriana Ibarra | Portafolio</title>
+</head>
+<body>
+    <!-- Nav -->
+    <nav class="nav">
+        <img src="assets/logoAI.png" alt="AdrianaIbarra_icon">
+        <h1 id="name">Adriana Ibarra</h1>
+        <div class="btn-open-nav" id="btn-open-nav"><i class="fa-solid fa-bars"></i></div>
+        <div class="nav-back" id="nav-back-visible">
+            
+            <ul class="nav-text">
+            <li class="btn-close-nav" id="btn-close-nav"><i class="fa-solid fa-xmark"></i></li>
+            <li class="btn-close"><a class="nav-link" href="#aboutMe" onclick="closeMenu (); ">About Me</a></li>
+            <li><a class="nav-link" href="#skills" onclick="closeMenu (); ">Skills</a></li>
+            <li><a class="nav-link" href="#portfolio" onclick="closeMenu (); ">Portfolio</a></li>
+            <li><a class="nav-link" href="#formation" onclick="closeMenu (); ">Formation</a></li>
+            <li><a class="nav-link" href="#contactMe" onclick="closeMenu (); ">Contact Me</a></li>
+        </ul>
+        </div>
+        
+    </nav>
+
+    <main id="main">
+        <!-- About Me -->
+        <section id="aboutMe" class="aboutMe">
+            <div class="info">
+                <h2>About Me</h2>
+                <p>Hi!, I'm Adriana Ibarra, embarking on a journey to become a Full Stack Developer</p>
+                <p>In my quest to improve the efficiency of my work, I discovered a passion for technology that led me to a career change and a keen enthusiasm for continuous learning.</p><br>
+                <p>I'm committed to learning and growing constantly. My goal is to become a highly skilled web developer capable of creating beautiful, intuitive, and functional websites. I'm dedicating time and effort to master fundamental technologies such as HTML, CSS, JavaScript, Java, MySQL, AWS, and I'm also excited to explore frameworks.</p>
+            </div>
+            
+            <div class="rectangle">
+                <img class="rectangle-img" src="assets/noise.png" alt="gold noise">
+                <img class= "selfie" src="assets/selfie.png" alt="Adriana-selfie">
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+
+            <div class="row-skills">
+                <h3>Tools</h3>
+                <div class="row-boxes" id="row-boxes1"></div>
+                <div class="row section"></div>
+            <!-- soft skills -->
+                <h3>Soft Skills</h3>
+                <div class="row-boxes" id="row-boxes2"></div>
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio" class="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-cards" id="portfolio-cards"></div>
+            
+            <div><p>See more on my <a href="https://github.com/AdrianaIbarraG">Git Hub</a></p></div>
+        </section>
+
+        <!-- Formation -->
+        <section id="formation" class="formation">
+            <h2>Formation</h2>
+            <ul class="cards" id="formation-card"></ul>
+        </section>
+    
+        <!-- Contact Me -->
+        <section id="contactMe" class="contactMe">
+            <h2>Contact Me</h2>
+
+            <div class="formMap">
+                <div class="form-container">
+                    <!-- validation -->
+                    <div class="alert fade show" role="alert" id="alertValidation" style="display:none">
+                        <p id="textAlert"></p> 
+                    </div>
+
+                    <!-- body of form -->
+                    <form class="form-body" id="formSend" action="https://formspree.io/f/xgebpqga" method="POST" novalidate>
+                        Name<input type="text" class="form-control" placeholder="Your Name (required)" id="txtName" required>
+                        E-mail <input type="email" class="form-control" placeholder="example@domain.com (required)" name="email" id="txtEmail" required>
+                        Phone<input type="text" class="form-control" placeholder="(xx) xxxx xxxx" name="phone" id="txtPhone">
+                        Message<textarea name="user_msg" id="txtMsg" cols="50" rows="9" class="form-control"
+                        placeholder="Leave your Message" value="" required></textarea>
+                    
+                        <div class="btns">
+                            <button id="btnSubmit" class="btn slide" type="submit"><span>Submit <i class="fa-regular fa-paper-plane"></i></span></button>
+                            <button id="btnClear" class="btn slide" type="clear"><span>Clear All <i class="fa-solid fa-eraser"></i></span></button>
+                        </div>
+                    </form>
+                </div>
+
+                <div>
+                    <div class="social">
+                        <div class="circle rotate-center">
+                            <a href="https://www.linkedin.com/in/adriana-ibarrag/" target="_blank"><i class=" fa fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <div class="circle rotate-center">
+                            <a href="https://github.com/AdrianaIbarraG/Portafolio_AdrianaIbarraG.git" target="_blank"><i class="fa fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <iframe class="google-map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119452.57508551358!2d-103.41781421574112!3d20.673932892053987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b18cb52fd39b%3A0xd63d9302bf865750!2sGuadalajara%2C%20Jal.!5e0!3m2!1ses!2smx!4v1684362526911!5m2!1ses!2smx"
+                    height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <em>All Rights Reserved &#169; Adriana Ibarra</em>
+    </footer>
+    <script src="js/main.js" defer></script>
+    <script src="js/form.js"  defer></script>
+    <script src="js/nav.js"></script>
+</body>
+</html>
